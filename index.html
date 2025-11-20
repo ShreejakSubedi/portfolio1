@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreejak Subedi - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/profile.jpg">
 </head>
+
 <body>
-<link rel="stylesheet" href="style.css">
-  <h1>Shreejak Subedi</h1>
-  <p>Web Developer</p>
 
-  <h2>About Me  </h2>
-  <p>i have so much talent that i cant express and overwhelming experience with js and python, </p>
+    <header>
+        <div class="profile-box">
+            <img src="images/profile.jpg" alt="Profile Photo">
+            <h1>Shreejak Subedi</h1>
+            <p class="tagline">Student • Biratnagar, Nepal</p>
+        </div>
+    </header>
 
-  <h2>Projects</h2>
-  <p><strong>Project 1:</strong> Personal Blog – HTML & CSS</p>
-  <p><strong>Project 2:</strong> To-Do App – JavaScript</p>
-  <p><strong>Project 3:</strong> Weather App – API + JS</p>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm <strong>Shreejak Subedi</strong>, a passionate student from Biratnagar, Nepal. 
+            I enjoy learning web development and building small but creative projects. 
+            This is my first portfolio website, and I am continuously improving my skills.
+        </p>
+    </section>
 
-  <h2>Contact</h2>
-  <p>Email: Shreejak888@gamil.com</p>
-  <p>GitHub: github.com/wantyounow</p>
+    <section class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Basic PHP</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
 
-  <hr>
-  <p><small>&copy; 2025 John Doe</small></p>
+    <section class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Money Tracker App</h3>
+            <p>A simple app to track given and received money.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project2.png" alt="Project 2">
+            <h3>Quiz Game</h3>
+            <p>A fun quiz application built using PHP, JS, and MySQL.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.png" alt="Project 3">
+            <h3>Weather App</h3>
+            <p>Weather application using OpenWeatherMap API.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Your Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Your Message</label>
+            <textarea placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        © <span id="year"></span> Shreejak Subedi — All Rights Reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
